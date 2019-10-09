@@ -18,6 +18,8 @@ from django.urls import path, include
 
 from users.forms import CustomUserForm
 
+from core.views import IndexTemplateView
+
 # one_step view to skip email verification
 from django_registration.backends.one_step.views import RegistrationView
 
@@ -46,4 +48,10 @@ urlpatterns = [
 
     # Registration via REST API(mainly an end-point for API)
     path('api/rest-auth/registration/', include('rest_auth.registration.urls')),
+
+    #home page view
+    path("", IndexTemplateView.as_view(), name="entry-point"),
+
+    # URLs for accessing users endpoints
+    path('api/', include('users.api.urls')),
 ]
