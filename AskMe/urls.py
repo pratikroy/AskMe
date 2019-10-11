@@ -54,4 +54,7 @@ urlpatterns = [
 
     # URLs for accessing users endpoints
     path('api/', include('users.api.urls')),
+
+    # URLs for Question model
+    path('api/', include('questions.api.urls')),
 ]

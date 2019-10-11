@@ -12,7 +12,7 @@ class AnswerSerializer(serializers.ModelSerializer):
         exclude = ["question", "updated_at", "voters"]
 
     def get_created_at(self, instance):
-        return instance.created_at.strftime("%B %d %Y")
+        return instance.created_at.strftime("%B %d, %Y")
 
     def get_likes_count(self, instance):
         return instance.voters.count()
@@ -34,7 +34,7 @@ class QuestionSerializer(serializers.ModelSerializer):
         exclude = ["updated_at"]
 
     def get_created_at(self, instance):
-        return instance.created_at.strftime("%B %d %Y")
+        return instance.created_at.strftime("%B %d, %Y")
 
     def get_answers_count(self, instance):
         return instance.answers.count()
