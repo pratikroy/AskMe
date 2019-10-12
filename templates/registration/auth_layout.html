@@ -7,12 +7,14 @@
   <title>AskMe</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   {% load static %}
-  <link rel="stylesheet" href="{% static "authentication/style.css" %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'authentication/style.css' %}" type="text/css">
 </head>
 <body>
-  <div class="auth-box text-center">
-    {% block content %}
-    {% endblock %}
+  <div class="outer-area">
+    <div class="auth-box text-center">
+      {% block content %}
+      {% endblock %}
+    </div>
   </div>
 </body>
 </html>

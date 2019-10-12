@@ -1,13 +1,20 @@
 .login-form-container {
   width: 300px;
   margin: auto;
-  border: 1px solid black;
+  border: 1px solid lightgray;
+  border-radius: 10px;
   padding: 25px;
 }
 
 .registration-form-container {
   width: 400px;
   margin: auto;
-  border: 1px solid black;
+  border: 1px solid lightgray;
+  border-radius: 10px;
   padding: 25px;
+}
+
+.outer-area {
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
