@@ -18,6 +18,7 @@ django-crispy-forms==1.7.2
 django-recaptcha==2.0.4
 django-registration==3.0.1
 django-rest-auth==0.9.5
+django-webpack-loader==0.6.0
 djangorestframework==3.10.2
 elasticsearch==7.0.2
 elasticsearch-dsl==7.0.0
